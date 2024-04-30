@@ -1,0 +1,390 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh">
+    <title>Sky Travel Consultant</title>
+   <style>
+    *{ 
+  font-family: Calibri;
+}
+
+
+.header{
+border-top: solid rgb(226, 11, 47);
+  height: 60px;
+background-color: rgb(47, 19, 184);
+display: flex;
+justify-content: space-between;
+padding: 5px 15px 5px 15px;
+position: fixed;
+width: 100%;
+
+}
+ body {
+  background-image: url(./photos.project/blue\ sky.jpg);
+ opacity: 100%;
+ background-color: rgb(91, 214, 255) ;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-color: red;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  .sky{
+   margin-bottom: 5px;
+    margin-left: 2%;
+    padding: 20px;
+    text-shadow:5px 5px 10px black;
+    
+  }
+  .tc{
+    margin-bottom: 3%;
+    margin-left: 2%;
+    padding: px;
+    text-shadow:5px 5px 10px black;
+  }
+
+.logo p{
+color: white;
+font-size: 25px; 
+
+
+ 
+}
+.nav{
+  height: 20px;
+  margin-top: 15px;
+  margin-right: 40px;
+  
+}
+.nav a{
+  text-decoration: none;
+  color: white;
+ font-size: 20px;
+ margin-left: 15px;
+transition: ease.5s;
+}
+.nav a:hover{
+  color: yellow ;
+ font-size: 25px;
+ margin-left: 15px;
+
+}
+.home{
+  background-image: url("./photos.project/new\ img.jpg");
+  height:100vh;
+  background-size: cover;
+  align-items: center;
+  padding-top: 300px;
+  background-attachment: fixed;
+}
+.sky{
+  margin-bottom: 10px;
+  color: red;
+  font-size: 40px;
+}
+.tc{
+  margin-bottom: 5px;
+color: green;
+font-size: 30px;
+
+}
+.services{
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  
+
+}
+.a{text-align: center;}
+#sub{
+  color: hsl(240, 21%, 24%);
+}
+     .subservice{
+      font-size:large;
+      font-style: italic;
+      width: 45%;
+      text-align: center;
+      margin-left: 20px;
+      box-shadow: 3px 3px 6px 6px grey ;
+      margin-bottom: 50px;
+border-radius: 10px;
+
+     }
+
+.cu{
+  display: flex;
+  padding: 100px;
+}
+.map{
+margin-right: 250px;
+
+
+}
+
+/* تنسيقات الصفحة */
+
+
+/* تنسيقات القسم "معلومات عنا" */
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #a7b5d2;
+  color: white;
+}
+
+/* تنسيقات العناصر داخل القسم */
+.container1 {
+  padding: 0 16px;
+}
+
+/* تنسيقات العناصر الفردية (الأعضاء في الفريق) */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(221, 206, 206, 0.2);
+  margin: 8px;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+   </style>
+
+
+     
+<body class="body">
+    <!-- header  -->
+    <div class="header"    >
+        <div class="logo"> <p><strong><i>Blue Sky</i></strong></p> </div>
+        <div class="nav"  >
+            <a href="#">Home</a>
+            <a href="#services">Services</a>
+            <a href="index .amr(2).html">About us</a>
+            <a href="">Contact us</a>
+    
+
+        </div>
+
+    </div>
+ 
+  
+    <!-- End Header -->
+    <!-- Home -->
+    <div class="home" >
+      <title>Flight Booking Form</title>
+ 
+</head>
+<body class="body">
+  <div class="container">
+    <h2>Flight Booking Form</h2>
+    <form action="" id="bookingForm" onsubmit="return submitForm();">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+      
+      <label for="email" >Email</label>
+      <input type="email"  placeholder="e.g, ******@gmail.com" id="email" name="email" required>
+      
+      <label for="flight">Select Flight</label>
+      <select id="flight" name="flight" required>
+        <option  value="">Select Flight Class</option>
+        <option value="index (2).HTML"  >Economy </option>
+        <option value="index.omer.html" >Premium Economy</option>
+        <option value="index.Mo_Taha page1.html" >Business</option>
+        <option value="main1.html" >First</option>
+      </select>
+      
+        <label for="departureDate">Departure Date:</label>
+        <input type="date" id="departureDate" name="departureDate" required> <br>
+    
+        <label for="fromCountry">From:</label>
+        <input type="text" id="fromCountry" name="fromCountry" required>
+    
+        <label for="toCountry">To:</label>
+        <input type="text" id="toCountry" name="toCountry" required>
+    
+      
+      
+      <label for="seats">Number of Adults</label>
+      <input type="number" id="seats" name="seats" min="1" required>
+      <label for="seats">Number of children</label>
+      <input type="number" id="seats">
+      
+      <button id="3" type="submit" >Search</button>
+
+    </form>
+  </div>
+
+  
+
+        <div class="sky" > Sky </div>
+<div class="tc" >Travel Consultant</div>
+    </div>
+
+   <div id="services" style="text-align: center;" >
+
+    <h1> Services</h1>
+    <div class="services"> 
+       
+        <div class="subservice" >
+             <h3  id="sub">Economy</h3>
+             <img width="100%" height="65%" src="./photos.project/flightbooking.jpg" alt="flight booking">
+             
+             <p>  Economy hospitality class on airlines is the most widely used around the world, as it provides the traveler with many advantages at a large difference in price  </p>
+         </div>
+         <div class="subservice" >
+          <h3 id="sub">Premium Economy </h3>
+          <img width="100%" height="65%" src="./photos.project/flightbooking.jpg" alt="flight booking">
+          
+          <p>  It is considered a middle class between luxury and economics. Provides wider economy class seats and improved service. Advanced entertainment equipment and improved options  </p>
+      </div>
+         <div class="subservice" >
+            <h3 id="sub" >Business Class</h3>
+            <img width="100%" height="65%" src="./photos.project/flightbooking.jpg" alt="flight booking">
+            
+            <p>  Business class is distinguished from other classes of travel by the quality of seats, food and drinks, ground service and other amenities </p>
+        </div>
+        <div class="subservice" >
+            <h3 id="sub" >First Class</h3>
+            <img width="100%" height="65%" src="./photos.project/flightbooking.jpg" alt="flight booking">
+           
+            <p>  It is the most luxurious class, and the first class seats are at the front of the plane. It has a limited number of seats and rooms for passengers, and it has been prepared for the comfort and luxury of the passengers  </p>
+        </div>
+
+        
+
+
+        
+
+
+
+
+
+
+
+    </div>
+   </div>
+<div class="cu">
+    <div class="map" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.036848713461!2d31.31056087505419!3d29.863211127135624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458368becfaa68d%3A0xb8a6f7d9576f81f8!2z2YPZhNmK2Kkg2KfZhNit2KfYs9io2KfYqiDZiNin2YTYsNmD2KfYoSDYp9mE2KfYtdi32YbYp9i52YrYjCDYrNin2YXYudipINit2YTZiNin2YY!5e0!3m2!1sen!2suk!4v1712529754580!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </div>
+<div class="info" > 
+    
+     <a href="https://www.facebook.com/home.php" target="_blank" ><i class="fa-brands fa-facebook"></i> Facebook </a> <br>
+     <a href="#"><i class="fa-brands fa-twitter"></i> Twitter </a> <br>
+     <a href="#"><i class="fa-solid fa-envelope"></i> Email </a> <br>
+     <a href="#"><i class="fa-brands fa-facebook"></i> Facebbok </a> <br>
+     <a href="#"><i class="fa-brands fa-facebook"></i> fa-facebook </a> <br>
+     <a href="#"><i class="fa-brands fa-facebook"></i> fa-facebook </a> <br>  
+   
+
+
+
+
+</div>
+
+
+</div>
+
+
+<script>
+  function submitForm() {
+    event.preventDefault(); // prevent the form from submitting normally
+    var flightSelect = document.getElementById("flight");
+    var selectedFlight = flightSelect.options[flightSelect.selectedIndex].value;
+    window.location.href = selectedFlight; // redirect to the selected flight page
+
+    const form = document.getElementById('degreeForm');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const degree = document.getElementById('degree').value;
+
+  if (degree === 'business-degree') {
+    window.location.href = 'index.Mo_Taha page1.html';
+  } else if (degree === 'economic-degree') {
+    window.location.href = 'economic-degree.html';
+  } else if (degree === 'first-degree') {
+    window.location.href = 'main1.html';
+  } else {
+    alert('Sorry, that degree is not available.');
+  }
+});
+  }
+</script>
+ 
+</body>
+<footer>
+  <div class="about-us">
+		<div class="pic">
+			<!-- Replace with your image source -->
+		</div>
+		<div class="about">
+			<h2 style="text-align: center;"><a href="./index .amr(2).html">ABOUT Us</a></h2>
+			<h5 style="text-align: center;">Front-end Developer & Designer</h5>
+      
+		</div>
+	</div>
+</footer>
+
+</html>
+
+

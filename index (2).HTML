@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trips</title>
+   <style>
+    .body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      line-height: 1.5;
+    }
+    
+    #header {
+      
+      height: 40px;
+      background-color: #3f0de2;
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 15px 5px 15px;
+      font-size:20px;
+      width: 100%;
+      margin-bottom: 50px;
+      color: #fff;
+      padding: 10px;
+    
+    }
+    
+    #nav2{
+    height: 20px;
+    margin-top: 5px;
+    margin-right: 40px;
+    
+    }
+    #nav2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    transition: ease.5s;
+    }
+    #nav2 a:hover{
+    color: yellow ;
+    font-size: 25px;
+    margin-left: 15px;
+    
+    }
+    
+    #home {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    #ali {
+    border-radius: 30px;
+    overflow: hidden;
+      width: 80%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    
+    #ali th, #ali td {
+     
+      padding: 8px;
+      text-align: center;
+    }
+    
+    #ali th {
+    justify-content:center;
+      background-color: #170cec;
+      color: #fff;
+    }
+    
+    #ali tr:nth-child(even) {
+      
+      background-color: #f2f2f2;
+    }
+    
+    #ali tr:hover {
+      background-color: #dfb6b6;
+    }
+    
+    #ali img {
+      max-width: 300px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    #ali img:hover + p {
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    #ali p {
+      opacity: 0;
+      text-align: center;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .a_link{
+    text-align: center;
+    font-size: large;
+    }
+    #logo p{
+      margin-bottom: 8px;
+    }
+    </style>
+</head>
+<body class="body">
+    <!-- header -->
+    <div id="header">
+        <div id="logo">
+            <p><strong><i>Blue Sky</i></strong></p>
+        </div>
+        <div id="nav2">
+            <a href="index.html">Home</a>
+            <a href="#Services">Services</a>
+            <a href="">About us</a>
+            <a href="">Contact us</a>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Home -->
+    <div id="home">
+        <h1>Flight Booking Form</h1>
+    </div>
+
+    <!-- Table -->
+    <table id="ali">
+        <thead>
+            <tr>
+                <th>Place of Departure</th>
+                <th>Destination</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cairo</td>
+                <td>
+                    <img src="./photos.project/khartoum.jpg" alt="Khartoum">
+                    <p><strong>Khartoum, Sudan khartoum is the capital city of Sudan, located at the confluence of the Blue and White Niles</strong></p>
+                    
+                    <div class="a_link"><a href="https://www.youtube.com/watch?v=dSXR0O8PIH0&pp=ygUVZGVzY3JpYnRpb24gZm9yIHN1ZGFu" target="_blank">Khartoum</a></div>
+                </td>
+                <td>$400</td>
+            </tr>
+            <tr>
+                <td>Cairo</td>
+                <td>
+                    <img src="./photos.project/london.jpg" alt="London">
+                    <p><strong>London, United Kingdom:London is the capital of the United Kingdom, and it is one of the largest cities in Britain</strong></p>
+                  
+                    <div class="a_link"> <a href="https://www.youtube.com/watch?v=v-YlgyeDVps&pp=ygUWZGVzY3JpcHRpb24gb2YgbG9uZG9uIA%3D%3D" target="_blank">London</a></div>
+                </td>
+                <td>$248</td>
+            </tr>
+            <tr>
+              <td>Cairo</td>
+              <td>
+                  <img src="./photos.project/istanbul.jpg" alt="istanbul">
+                  <p><strong>istanbul.:Istanbul is the largest city in Turkey and is considered an economic, cultural, and historical center of the country. It is located on the Bosphorus Strait and extends to both Europe and Asia, with a population of over 15 million people, making it one of the most populous cities in the world</strong></p>
+                
+                  <div class="a_link"> <a href="https://www.youtube.com/watch?v=7A1q7v4btbk&pp=ygUYZGVzY3JpcHRpb24gZm9yIGlzdGFuYnVs" target="_blank">istanbul</a></div>
+              </td>
+              <td>$248</td>
+          </tr>
+          <tr>
+            <td>Cairo</td>
+            <td>
+                <img src="./photos.project/italy.jpg" alt="Italy">
+                <p><strong>Rome,Italy Rome is the capital of Italy, and is considered one of the oldest continuously inhabited cities in the world, with a history extending back more than 2,500 years.  It was once the center of the Roman Empire, which was one of the most powerful and influential civilizations in world history.</strong></p>
+              
+                <div class="a_link"> <a href="https://www.youtube.com/watch?v=L2q318dZKP0" target="_blank">Italy</a></div>
+            </td>
+            <td>$248</td>
+        </tr>
+        <tr>
+          <td>Cairo</td>
+          <td>
+              <img src="./photos.project/paris.jpg" alt="paris">
+              <p><strong>paris, Paris is the capital of France and is considered one of the most beautiful and romantic cities in the world.  It is located in the north-central part of the country on the Seine River and has a population of more than 2.2 million people, and an urban area of more than 12 million people. Paris is famous for its famous landmarks, such as the Eiffel Tower, the Louvre Museum, Notre Dame Cathedral, and the Sacre Coeur Basilica.</strong></p>
+            
+              <div class="a_link"> <a href="https://www.youtube.com/watch?v=-d0ZFJ2gpOo&pp=ygUVZGVzY3JpcHRpb24gZm9yIHBhcmlz" target="_blank">paris</a></div>
+          </td>
+          <td>$248</td>
+      </tr>
+      <tr>
+        <td>Cairo</td>
+        <td>
+            <img src="./photos.project/New york.jpg" alt=" New York">
+            <p><strong>Amirica, New York City, often called New York or NYC, is the most populous city in the United States, located at the southern tip of New York State on one of the largest natural harbors in the world.  It is a global city and cultural, financial, high-tech, entertainment, and media center with a significant influence on commerce, healthcare, scientific production, life sciences, research and technology, education, politics, tourism, dining, art, fashion, and sports.  The city is the most densely populated major city in the United States.</strong></p>
+          
+            <div class="a_link"><a href="https://www.youtube.com/watch?v=zYYCjlgmA08&pp=ygUYZGVzY3JpcHRpb24gZm9yIG5ldyB5b3Jr" target="_blank">New York</a></div>
+        </td>
+        <td>$248</td>
+    </tr>
+    <tr>
+      <td>Cairo</td>
+      <td>
+          <img src="./photos.project/Riyadh.jpg" alt="Riyadh">
+          <p><strong> Riyadh is the capital and most populous city of Saudi Arabia, as well as the capital of the Riyadh Province. It is located in the center of the Arabian Peninsula on a large plateau and is home to 6.5 million people. The city is divided into 15 municipal districts and is managed by Riyadh Municipality and the Riyadh Development Authority. Riyadh has been designated a global city and has a hot desert climate with extremely hot temperatures during the summer months.</strong></p>
+        
+          <div class="a_link"> <a href="https://www.youtube.com/watch?v=aDO8i0FTyh8&pp=ygUWZGVzY3JpcHRpb24gZm9yIHJpeWFkaA%3D%3D" target="_blank">Riyadh</a></div>
+      </td>
+      <td>$248</td>
+  </tr>
+  <tr>
+    <td>Cairo</td>
+    <td>
+        <img src="./photos.project/oman.jpg" alt="Muscat">
+        <p><strong>Muscat is the capital and largest city of the Sultanate of Oman, located on the north-east coast of the country. It has a rich history, with people living in the area for over 2,000 years and the first writings about the city dating back to the 1st century CE. Muscat became an important city due to its port and business and trade activities. The city has been ruled by the Al Bu Sa 'id tribe since the 18th century and has been a center of many wars between Portugal, Persia, and Turkey.</strong></p>
+      
+        <div class="a_link"> <a href="https://youtu.be/h1imIqH9PvU?si=JQ0nNHWxxxirEs_g" target="_blank">Muscat</a></div>
+    </td>
+    <td>$248</td>
+</tr>
+
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</body>
+</html>

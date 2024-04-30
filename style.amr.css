@@ -1,0 +1,221 @@
+/* عمرو صلاح ابراهيم محمد 20230384 */
+*{
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home-page{
+    width: 100%;
+    height: 130vh;
+    background-color: rgb(94, 94, 146)
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #2b2b75;
+    position: fixed;
+}
+.title{
+    margin-top: 15;
+    margin-left: 10;
+    float: left;
+}
+.name-1 , .name-2{
+    font-size: 27;
+    display: inline;
+    font-weight: 600;
+}
+.name-1{
+    color: rgb(19, 19, 218);   
+}
+.name-2{
+    color: white;
+}
+.list{
+    list-style: none;
+    float: right;
+    padding-right: 20;
+}
+.list li{
+    display: inline-block;
+    padding: 20px 0 0 15;
+}
+.list li a{
+    text-decoration: none;   
+}
+.a1{
+    color: rgb(0, 102, 255);
+}
+.a2{
+    color: white;
+}
+.a2:hover{
+    color: rgb(0, 102, 255);
+}
+.underline{
+    width: 46;
+    height: 2;
+    float: right;
+    background-color: rgb(0, 102, 255);
+    margin-top: 40;
+    margin-right:-102 ;  
+}
+.content-head{
+    font-size: 40;
+    padding-top: 70;
+    padding-left: 10;
+    color: white;
+}
+.content-pars{
+    margin-top: 10;
+}
+.content-par{
+    font-size: 19;
+    padding-top: 5;
+    padding-left: 15;
+    color: white;
+}
+.home-btn1 , .home-btn2{
+    width: 150;
+    height: 30;
+    background-color: rgba(15, 29, 36, 0.6);
+    margin-top: 20;
+    margin-left: 60;
+    border: none;
+    border-radius: 5%;
+}
+.home-btn1:hover{
+    width: 155;
+    height: 33;
+    background-color: #000069aa;
+}
+.home-btn2:hover{
+    width: 155;
+    height: 33;
+    background-color: #000069aa;
+}
+.home-btn1 a{
+    text-decoration-line: none;
+    color: white;
+    font-size: 18;
+}
+.home-btn2 a{
+    text-decoration-line: none;
+    color: white;
+    font-size: 18;
+}
+.borders{
+    margin-top: 25;
+}
+.borders-par{
+    text-align: center;
+    font-size: 30;
+    color: white;
+}
+.border1 , .border2 , .border3{
+    margin-top: 12;
+}
+.border1{
+    width: 300;
+    height: 380;
+    background-image: url(./images.amr/big-ben.jpg);
+    background-size: cover;
+    float: left;
+    margin-left: 300;
+}
+.border2{
+    width: 300;
+    height: 380;
+    background-image: url(./images.amr/eiffel-tower.jpg);
+    background-size: cover;
+    float: left;
+    margin-left: 20;
+    margin-right: 20;
+}
+.border3{
+    width: 300;
+    height: 380;
+    background-image: url(./images.amr/victor-emmanuel-ii-monument.jpg);
+    background-size: cover;
+    float: left;
+}
+.login-page{
+    width: 100%;
+    height: 100vh;
+    background: url(./images.amr/airport-terminal.jpg);
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.login-border{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: transparent;
+    border: 2px solid white;
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+}
+.login-border h1{
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid  ;
+}
+.login-border form{
+    padding: 0 40px;
+}
+.input-box{
+    position: relative;
+    border-bottom: 2px solid #ffffff;
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    background: none;
+    outline: none;
+}
+.input-box ::placeholder{
+    color: white;
+}
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.pass:hover{
+    text-decoration: underline;
+  }
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+.signup{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+}
+.signup a{
+    color: #2691d9;
+    text-decoration: none;
+}
+.signup a:hover{
+    text-decoration: underline;
+}

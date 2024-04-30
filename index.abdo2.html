@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Class</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f2ff; 
+            color: #333;
+            
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff; 
+        }
+
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .info {
+            margin-bottom: 30px;
+        }
+
+        .info img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .info p {
+            text-align: justify;
+        }
+
+        form {
+            margin-top: 20px;
+            background-color: #fff; /* White background for the form */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .city-img {
+            max-width: 50px;
+            max-height: 50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>First Class</h1>
+        <p id="demo">If you want first class, select the button below:</p>
+        <button onclick='document.getElementById("demo").innerHTML = "Hello to first class!"'>Click!</button>
+
+        <div class="info">
+            <h2>About First Class</h2>
+            <p>First class air travel represents the pinnacle of luxury and comfort in the aviation industry. With its exclusive amenities and personalized services, first class offers passengers an unparalleled flying experience that goes beyond mere transportation.</p>
+            <p>From spacious seating and fully reclining beds to gourmet dining options and dedicated concierge services, first class cabins are designed to cater to the most discerning travelers. Passengers are treated to a world of extravagance and convenience, where every detail is meticulously curated to ensure maximum comfort and satisfaction.</p>
+            <p>One of the hallmarks of first class travel is privacy and exclusivity. With separate check-in counters, priority boarding, and access to exclusive lounges, first class passengers enjoy a seamless and stress-free travel experience from start to finish.</p>
+            <p>In addition to luxurious amenities and services, first class passengers often benefit from enhanced entertainment options, advanced in-flight connectivity, and amenities kits filled with premium skincare products and travel essentials.</p>
+            <p>Overall, first class air travel sets the standard for luxury and sophistication, offering passengers an unforgettable journey that combines comfort, convenience, and unparalleled service.</p>
+        </div>
+        
+        <div>
+            <h2>Book Your Flight</h2>
+            <form>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" placeholder="Name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password (10-20 characters)" minlength="10" maxlength="20" required>
+                <input type="submit" value="Submit">    
+            </form>
+        </div>
+
+        <div>
+            <h2>Flights</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Trip Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img class="city-img" src="./photo.abdo/lisbon.jpeg" alt="Lisbon"><br><a href="https://www.youtube.com/watch?v=mK7rgh4fhYQ" target="_blank">Lisbon</a></td>
+                        <td><img class="city-img" src="./photo.abdo/madrid.jpeg" alt="Madrid"><br><a href="https://www.youtube.com/watch?v=EH87LE_WeT4" target="_blank">Madrid</a></td>
+                        <td><del>$300</del> $250</td>
+                    </tr>
+                    <tr>
+                        <td><img class="city-img" src="./photo.abdo/paris.jpeg" alt="Paris"><br><a href="https://www.youtube.com/watch?v=EEeu7-xJX_c" target="_blank">Paris</a></td>
+                        <td><img class="city-img" src="./photo.abdo/london.jpeg" alt="London"><br><a href="https://www.youtube.com/watch?v=sNJZkxXjlVg" target="_blank">London</a></td>
+                        <td><del>$400</del> $350</td>
+                    </tr>
+                    <tr>
+                        <td><img class="city-img" src="./photo.abdo/berlin.jpeg" alt="Berlin"><br><a href="https://www.youtube.com/watch?v=nEtSeuBygFA" target="_blank">Berlin</a></td>
+                        <td><img class="city-img" src="./photo.abdo/warsaw.jpeg" alt="Warsaw"><br><a href="https://www.youtube.com/watch?v=CrKdc3XGDOc" target="_blank">Warsaw</a></td>
+                        <td><del>$500</del> $450</td>
+                    </tr>
+                    <tr>
+                        <td><img class="city-img" src="./photo.abdo/milano.jpeg" alt="Milano"><br><a href="https://www.youtube.com/watch?v=FL3rmYPZaMw" target="_blank">Milano</a></td>
+                        <td><img class="city-img" src="./photo.abdo/geneva.jpeg" alt="Geneva"><br><a href="https://www.youtube.com/watch?v=e58DKJUDfPo" target="_blank">Geneva</a></td>
+                        <td><del>$600</del> $550</td>
+                    </tr>
+        
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
