@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(111, 111, 220);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    background: url(../images/clean-airplane-interior.jpg);
+    background-size: cover;
+}
+h2{
+    padding: 8px;
+    color: rgb(255, 255, 255); 
+    font-size: 30px;
+}
+.p1{
+    padding-left: 25px;
+    margin-top: -10;
+    color: white;
+    font-size: 21;
+}
+.p2{
+    padding-left: 25px;
+    margin-top: -10;
+    color: white;
+    font-size: 21;
+}
+.p3{
+    padding-left: 40px;
+    color: rgb(220, 234, 234);
+    font-size: 16;
+    margin-top: -10px;
+}
+iframe{
+    margin-left: 50;
+    margin-top: 30;
+}
+.images{
+    float: right;    
+}
+.img1{
+    display: block;
+    margin-left: 180;
+    
+}
+.img1{
+    margin-top: -110;
+    margin-bottom: 50;
+}
+.img2{
+    margin-right: 40;
+    
+}
+.img3{
+    margin-right: 30;
+}
+.link{
+    font-size: larger;
+    font-style: italic;
+    color: rgb(213, 227, 11);
+}
